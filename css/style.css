@@ -40,3 +40,11 @@ body,html{
     color: #111;
     transition: 0.3s
 }
+#cabecalho{
+    color: #111;
+    font-size: 28px;
+    margin-left: 50%;
+}
+#formulario{
+    margin-left: 40%;
+}
