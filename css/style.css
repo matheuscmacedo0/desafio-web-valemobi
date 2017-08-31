@@ -18,8 +18,12 @@ body,html{
     color: #111;
     font-size: 28px;
     margin-left: 50%;
+    margin-bottom: 20px;
 }
 #formulario{
+    margin-left: 40%;
+}
+#pesquisa{
     margin-left: 40%;
 }
 
@@ -38,6 +42,7 @@ body,html{
     transition: 0.5s; 
     box-shadow: 2px 2px 20px 2px #111;
 	-webkit-box-shadow: 2px 2px 20px 2px #111;
+    display: table;
 }
 .menu-lateral a {
     padding: 8px 8px 8px 2px;

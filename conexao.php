@@ -1,9 +1,10 @@
 <?php
+
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
 $banco = 'valemobi';
 
-$connect = new mysqli($servidor, $usuario, $senha, $banco);
+$conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 
 ?>
