@@ -36,7 +36,14 @@
       
     </nav>
    
-
+   <div class="container">
+    <div class="col-md-4" id="cabecalho-consultado">
+    	<header>
+			Resultados para: <?php echo $_POST['pesquisa-mercadoria']?>
+		</header>	
+    </div>
+    </div>
+	
 
    	<section id="tabela-pesquisa">
    	
@@ -46,9 +53,7 @@
 
 	   			<div class="col-md-6">
 
-	   				<header id="cabecalho-consultado">
-				    	Resultados para: <?php echo $_POST['pesquisa-mercadoria']?>
-				    </header>
+	   				
 	   				
 				   	<?php
 						include 'conexao.php';

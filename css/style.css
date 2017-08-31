@@ -6,7 +6,7 @@ body,html{
 }
 
 #logotipo{
-	color: #337ab7;
+	color: #87CEFA;
 	font-size: 28px;
     font-family: "Courier";
 	display: flex !important;
@@ -34,6 +34,7 @@ body,html{
 #cabecalho-consultado{
     color: #111;
     font-size: 28px;
+    margin-left: 47%;
     margin-bottom: 20px;
 }
 #formulario{
@@ -76,6 +77,6 @@ body,html{
     transition: 0.6s;
     border-radius: 18px;
     /*Compatibilidade*/
-    -webkit-border-radius: 22px;
-    -moz-border-radius: 22px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
 }
