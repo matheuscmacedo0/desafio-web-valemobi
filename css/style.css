@@ -1,3 +1,4 @@
+/*FORMATAÇÃO GERAL*/
 body,html{
 	height: 100%;
 	background-color: #EEE0E5;
@@ -13,7 +14,17 @@ body,html{
 	margin: 5px 5px 40px 5px;
 
 }
+#cabecalho{
+    color: #111;
+    font-size: 28px;
+    margin-left: 50%;
+}
+#formulario{
+    margin-left: 40%;
+}
 
+
+/*MENU LATERAL*/
 .menu-lateral {
     height: 100%;
     width: 300px;
@@ -40,12 +51,4 @@ body,html{
     background: rgba(78,238,148,0.6);
     color: #111;
     transition: 0.3s
-}
-#cabecalho{
-    color: #111;
-    font-size: 28px;
-    margin-left: 50%;
-}
-#formulario{
-    margin-left: 40%;
 }
