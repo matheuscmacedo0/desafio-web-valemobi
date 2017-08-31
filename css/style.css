@@ -6,12 +6,23 @@ body,html{
 }
 
 #logotipo{
-	color: #4EEE94;
+	color: #337ab7;
 	font-size: 28px;
+    font-family: "Courier";
 	display: flex !important;
 	justify-content: center !important;
-	border: 2px solid green;
-	margin: 5px 5px 40px 5px;
+    margin: 5px 5px 40px 5px;
+
+    border-radius: 22px;
+    /*Compatibilidade*/
+	-webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+
+    box-shadow: 2px 2px 20px 2px #337ab7;
+    /*Compatibilidade*/
+    -webkit-box-shadow: 2px 2px 20px 2px #337ab7;
+    -moz-box-shadow: 2px 2px 20px 2px #337ab7;
+	
 
 }
 #cabecalho{
@@ -20,13 +31,21 @@ body,html{
     margin-left: 50%;
     margin-bottom: 20px;
 }
+#cabecalho-consultado{
+    color: #111;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
 #formulario{
     margin-left: 40%;
 }
 #pesquisa{
     margin-left: 40%;
 }
-
+#tabela-pesquisa{
+    margin-left: 38%;
+    margin-top: 100px;
+}
 
 /*MENU LATERAL*/
 .menu-lateral {
@@ -50,10 +69,13 @@ body,html{
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s
 }
 .menu-lateral a:hover{
-    background: rgba(78,238,148,0.6);
+    background: rgba(51,122,183,0.6);
     color: #111;
-    transition: 0.3s
+    transition: 0.6s;
+    border-radius: 18px;
+    /*Compatibilidade*/
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
 }
