@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
@@ -7,7 +6,7 @@
     <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>NegociaShop - Consultar</title>
+    <title>Editar</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
@@ -20,7 +19,7 @@
   </head>
 
   <body>
-    <nav>
+  <nav>
 
       <div class="container">
 
@@ -35,40 +34,23 @@
 
       </div>
       
-    </nav>
+    </nav> 
+	<?php
+	include 'conexao.php';
 
-    <header id="cabecalho">
-      Consultar Mercadoria
-    </header>
+		$id = $_GET['id'];
+		
+		$query = ("DELETE from mercadoria WHERE codigo_mercadoria = '$id'") or die(mysqli_error());
 
-    <section id="pesquisa">
+		$mysqli = mysqli_query($conexao,$query);
 
-      <div class="container">  
+		echo "<span id='cabecalho'>A mercadoria foi removida com sucesso!</span>";
+		
+	?>
 
-        <div class="row">
-
-          <div class="col-md-5">
-          
-            <form method="post" action="resultado-mercadoria.php">
-
-              <div class="form-group">
-                <label for="pesquisa-mercadoria">Digite o nome da mercadoria:</label>
-                <input type="text" id="pesquisa-mercadoria" class="form-control" name="pesquisa-mercadoria">
-              </div>
-
-                <input type="submit" id="pesquisar" value="Pesquisar" class="btn btn-primary" name="pesquisar-mercadoria">
-
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-   
 
     <!--Bootstrap-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
+

@@ -52,7 +52,7 @@
 
 		$mysqli = mysqli_query($conexao,$query);
 
-		echo "<script>alert('Alterações salvas com sucesso!');</script>";
+		echo "<span id='cabecalho'>Alterações salvas com sucesso!</span>";
 		
 	?>
 

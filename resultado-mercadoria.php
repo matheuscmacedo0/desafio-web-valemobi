@@ -93,6 +93,9 @@
 								echo "<td>".$precoMercadoria."</td>";
 								echo "<td>".$tipoNegocio."</td>";
 								echo "<td><a href='editar-mercadoria.php?id=".$vetorID[$aux]."' class='glyphicon glyphicon-pencil'>
+											</a></td>";
+								echo "<td><a href='remover-mercadoria.php?id=".$vetorID[$aux]."' class='glyphicon glyphicon-remove'
+											onclick='return confirm('Tem certeza que deseja remover esta mercadoria?')'>
 											</a></td></tr>";
 								
 							}

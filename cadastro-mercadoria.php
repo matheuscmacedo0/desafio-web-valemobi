@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
@@ -37,35 +36,28 @@
       
     </nav>
 
-    <header id="cabecalho">
-      Consultar Mercadoria
-    </header>
 
-    <section id="pesquisa">
+    <?php
+		include 'conexao.php';
 
-      <div class="container">  
+		$codigoMercadoria = $_POST['codigo-mercadoria'];
+		$tipoMercadoria = $_POST['tipo-mercadoria'];
+		$nomeMercadoria = $_POST['nome-mercadoria'];
+		$quantidadeMercadoria = $_POST['quantidade-mercadoria'];
+		$precoMercadoria = $_POST['preco-mercadoria'];
+		$tipoNegocio = $_POST['tipo-negocio'];
 
-        <div class="row">
+		$query = ("INSERT INTO mercadoria(codigo_mercadoria, tipo_mercadoria, nome_mercadoria,
+									quantidade_mercadoria, preco_mercadoria, tipo_negocio)
+					VALUES('$codigoMercadoria','$tipoMercadoria', '$nomeMercadoria', '$quantidadeMercadoria',
+							'$precoMercadoria', '$tipoNegocio')");
 
-          <div class="col-md-5">
-          
-            <form method="post" action="resultado-mercadoria.php">
+		$mysqli = mysqli_query($conexao,$query);
 
-              <div class="form-group">
-                <label for="pesquisa-mercadoria">Digite o nome da mercadoria:</label>
-                <input type="text" id="pesquisa-mercadoria" class="form-control" name="pesquisa-mercadoria">
-              </div>
+		echo "<span id='cabecalho'>Mercadoria cadastrada com sucesso!</span>";
 
-                <input type="submit" id="pesquisar" value="Pesquisar" class="btn btn-primary" name="pesquisar-mercadoria">
 
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
+	?>
    
 
     <!--Bootstrap-->
