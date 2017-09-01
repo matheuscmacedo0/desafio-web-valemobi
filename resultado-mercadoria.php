@@ -67,26 +67,36 @@
 						$row = mysqli_num_rows($mysqli);
 
 						// Criando cabeçalho da tabela
-						echo '<table class="table table-striped"><thead><tr><th>Codigo</th><th>Tipo</th><th>Nome</th>
+						echo '<table class="table table-striped table-hover"><thead><tr><th>Codigo</th><th>Tipo</th><th>Nome</th>
 								<th>Quantidade</th><th>Preco</th><th>Negocio</th></tr></thead>';
 
+						// Definindo IDs dinâmicos para as TDs do Código Mercadoria
+						$vetorID = array();
+						$aux = 0;
 						// Se houver resultado, exiba-o
 						if ($row > 0) {
 							while ($linha = mysqli_fetch_array($mysqli)) {
+								$aux++;
 								$codigoMercadoria = $linha['codigo_mercadoria'];
+								$vetorID[$aux] = $codigoMercadoria;
 								$tipoMercadoria = $linha['tipo_mercadoria'];
 								$nomeMercadoria = $linha['nome_mercadoria'];
 								$quantidadeMercadoria = $linha['quantidade_mercadoria'];
 								$precoMercadoria = $linha['preco_mercadoria'];
 								$tipoNegocio = $linha['tipo_negocio'];
 
-								echo "<tbody><tr><td align='center'>".$codigoMercadoria."</td>";
+								echo "<tbody><tr><td align='center' id='".$vetorID[$aux]."'>".$codigoMercadoria."</td>";
+								
 								echo "<td>".$tipoMercadoria."</td>";
 								echo "<td>".$nomeMercadoria."</td>";
 								echo "<td align='center'>".$quantidadeMercadoria."</td>";
 								echo "<td>".$precoMercadoria."</td>";
-								echo "<td>".$tipoNegocio."</td></tr>";
+								echo "<td>".$tipoNegocio."</td>";
+								echo "<td><a href='editar-mercadoria.php?id=".$vetorID[$aux]."' class='glyphicon glyphicon-pencil'>
+											</a></td></tr>";
+								
 							}
+							// echo $aux[$aux2];
 						}else{
 							echo "Nenhum resultado foi encontrado";
 						}
