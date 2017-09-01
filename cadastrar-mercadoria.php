@@ -71,6 +71,7 @@
                     <option value="Eletrônicos">Eletrônicos</option>
                     <option value="Eletrodomésticos">Eletrodomésticos</option>
                     <option value="Jogos">Jogos</option>
+                    <option value="Livros">Livros</option>
                     <option value="Video Games">Video Games</option>
                     <option value="Outros">Outros</option>
                   </select>
