@@ -8,7 +8,7 @@
     <!-- Icone -->
     <link rel="icon" href="img/negociashop.ico">
     
-    <title>Editar</title>
+    <title>Salvar</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->

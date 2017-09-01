@@ -9,7 +9,7 @@
     <!-- Icone -->
     <link rel="icon" href="img/negociashop.ico">
     
-    <title>NegociaShop - Consultar</title>
+    <title>Consultar</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->

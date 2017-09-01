@@ -8,7 +8,7 @@
     <!-- Icone -->
     <link rel="icon" href="img/negociashop.ico">
     
-    <title>NegociaShop - Negociação de Mercadorias</title>
+    <title>Resultado</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
