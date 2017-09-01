@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Icone -->
+    <link rel="icon" href="img/negociashop.ico">
+    
     <title>NegociaShop - Negociação de Mercadorias</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
