@@ -26,10 +26,10 @@
 
         <div class="col-md-4">
           <div id="menu" class="menu-lateral">
-            <div id="logotipo">NegociaShop</div>
-            <a href="index.html">Início</a>
-            <a href="cadastrar-mercadoria.html">Cadastrar Mercadoria</a>
-            <a href="consultar-mercadoria.html">Consultar Mercadoria</a>
+            <div id="logotipo"><a href="index.php">NegociaShop</div>
+            <a href="index.php">Início</a>
+            <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
+            <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
           </div>
         </div>
 

@@ -25,10 +25,10 @@
 
         <div class="col-md-4">
           <div id="menu" class="menu-lateral">
-            <div id="logotipo">NegociaShop</div>
-            <a href="index.html">Início</a>
-            <a href="cadastrar-mercadoria.html">Cadastrar Mercadoria</a>
-            <a href="consultar-mercadoria.html">Consultar Mercadoria</a>
+            <div id="logotipo"><a href="index.php">NegociaShop</div>
+            <a href="index.php">Início</a>
+            <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
+            <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
           </div>
         </div>
 
@@ -61,12 +61,12 @@
 						$pesquisa = $_POST['pesquisa-mercadoria'];
 						$query = ("SELECT * FROM mercadoria WHERE nome_mercadoria LIKE '%".$pesquisa."%' ");
 						$mysqli = mysqli_query($conexao,$query);
-
-						
-						// $row = mysqli_num_row($mysqli)
-						$row = mysqli_num_rows($mysqli);
-
-						// Criando cabeçalho da tabela
+			 			// Conta as linhas do resultado
+			            $row = mysqli_num_rows($mysqli);
+			            // Definindo IDs dinâmicos para as TDs do Código Mercadoria
+			            $vetorID = array();
+			            $aux = 0;
+			            // Criando cabeçalho da tabela
 						echo '<table class="table table-striped table-hover"><thead><tr><th>Codigo</th><th>Tipo</th><th>Nome</th>
 								<th>Quantidade</th><th>Preco</th><th>Negocio</th></tr></thead>';
 
