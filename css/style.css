@@ -4,7 +4,7 @@ body,html{
 	background-color: #EEE0E5;
     overflow-x: hidden;
 }
-
+/*LOGOTIPO*/
 #logotipo{
 	color: #87CEFA;
 	font-size: 28px;
@@ -22,16 +22,27 @@ body,html{
     /*Compatibilidade*/
     -webkit-box-shadow: 2px 2px 20px 2px #337ab7;
     -moz-box-shadow: 2px 2px 20px 2px #337ab7;
-	
+}
+#logotipo a{
+    text-decoration: none;
+    color: #87CEFA;
+    
+}
+#logotipo a:hover{
+    text-decoration: none;
+    background: #111;
+    
+}
+#img-logo{
+    width: 60px;
+    height: 50px;
+    display: block;
+    margin-left: 110px;
+    margin-bottom: 10px;
 
 }
+/*COMPONENTES GERAIS DA PÁGINA*/
 #cabecalho{
-    color: #111;
-    font-size: 28px;
-    margin-left: 47%;
-    margin-bottom: 20px;
-}
-#cabecalho-consultado{
     color: #111;
     font-size: 28px;
     margin-left: 47%;
@@ -48,24 +59,46 @@ body,html{
     margin-top: 100px;
 }
 
-/*MENU LATERAL*/
-.menu-lateral {
+/*BOTAO INICIO CENTRALIZADO*/
+#inicio{
+    text-align: center;
+}
+#rodape{
+      text-align: center;
+      font-size: 14px;
+      line-height: 570px;;
+}
+.conteudo{
+    color: #111;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.cadastrar-salvar{
+    width: 100%;
+    
+}
+
+/*BARRA LATERAL, INDEPENDENTE DO MENU DE OPÇÕES*/
+.barra-lateral{
     height: 100%;
-    width: 300px;
+    width: 290px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding: 60px 0px 0px 5px;
-    transition: 0.5s; 
+    overflow-y: hidden;
+    padding-top: 0px;
+    display: table-cell;
     box-shadow: 2px 2px 20px 2px #111;
-	-webkit-box-shadow: 2px 2px 20px 2px #111;
-    display: table;
+    -webkit-box-shadow: 2px 2px 20px 2px #111;
+
 }
+/*MENU LATERAL*/
 .menu-lateral a {
-    padding: 8px 8px 8px 2px;
+    padding: 8px 8px 8px 5px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;

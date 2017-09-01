@@ -22,15 +22,20 @@
     <nav>
 
       <div class="container">
+        <div class="col-xs-3 barra-lateral">
 
-        <div class="col-md-4">
-          <div id="menu" class="menu-lateral">
-            <div id="logotipo"><a href="index.php">NegociaShop</div>
-            <a href="index.php">Início</a>
-            <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
-            <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
+            <a href="index.php"><img src="img/negociashopLogo.png" id="img-logo"></a>
+            <div id="menu" class="menu-lateral">
+              <div id="logotipo"><a href="index.php">NegociaShop</a></div>
+              <a href="index.php" id="inicio">Início</a>
+              <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
+              <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
+            </div>
+
+          <footer id="rodape">
+            @Matheus Macedo to Valemobi
+          </footer>
         </div>
-
       </div>
       
     </nav>
@@ -54,8 +59,7 @@
     		$mysqli = mysqli_query($conexao,$query);
 
     		echo "<span id='cabecalho'>Mercadoria cadastrada com sucesso!</span>";
-        
-        mysqli_free_result($mysqli);
+
         mysqli_close($conexao);
 
 

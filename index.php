@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Icone -->
+    <link rel="icon" href="img/negociashop.ico">
     <title>NegociaShop - Negociação de Mercadorias</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,19 +20,24 @@
   </head>
 
   <body>
+  
     <nav>
 
       <div class="container">
+        <div class="col-xs-3 barra-lateral">
+        
+          <a href="index.php"><img src="img/negociashopLogo.png" id="img-logo"></a>
+            <div id="menu" class="menu-lateral">
+              <div id="logotipo"><a href="index.php">NegociaShop</a></div>
+              <a href="index.php" id="inicio">Início</a>
+              <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
+              <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
+            </div>
 
-        <div class="col-md-4">
-          <div id="menu" class="menu-lateral">
-            <div id="logotipo"><a href="index.php">NegociaShop</div>
-            <a href="index.php">Início</a>
-            <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
-            <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
-          </div>
+          <footer id="rodape">
+            @Matheus Macedo to Valemobi
+          </footer>
         </div>
-
       </div>
       
     </nav>
@@ -40,10 +46,14 @@
       Bem-vindo a NegociaShop
     </header>
 
-    Confira as últimas novidades:
+    
     <section id="tabela-pesquisa">
     
       <div class="container">
+      
+        <div class="conteudo">
+          Confira as últimas novidades:
+        </div>    
 
         <div class="row">
 

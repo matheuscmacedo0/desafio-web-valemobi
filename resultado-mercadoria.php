@@ -22,22 +22,26 @@
     <nav>
 
       <div class="container">
+        <div class="col-xs-3 barra-lateral">
 
-        <div class="col-md-4">
-          <div id="menu" class="menu-lateral">
-            <div id="logotipo"><a href="index.php">NegociaShop</div>
-            <a href="index.php">Início</a>
-            <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
-            <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
-          </div>
+            <a href="index.php"><img src="img/negociashopLogo.png" id="img-logo"></a>
+            <div id="menu" class="menu-lateral">
+              <div id="logotipo"><a href="index.php">NegociaShop</a></div>
+              <a href="index.php" id="inicio">Início</a>
+              <a href="cadastrar-mercadoria.php">Cadastrar Mercadoria</a>
+              <a href="consultar-mercadoria.php">Consultar Mercadoria</a>
+            </div>
+
+          <footer id="rodape">
+            @Matheus Macedo to Valemobi
+          </footer>
         </div>
-
       </div>
       
     </nav>
    
    <div class="container">
-    <div class="col-md-4" id="cabecalho-consultado">
+    <div class="col-md-4" id="cabecalho">
     	<header>
 			Resultados para: <?php echo $_POST['pesquisa-mercadoria']?>
 		</header>	
@@ -105,8 +109,8 @@
 						}
 						echo "</tbody</table>";
 
-						mysqli_free_result($mysqli);
-						mysqli_close($conexao);
+						
+						
 
 					?>
 				</div>
